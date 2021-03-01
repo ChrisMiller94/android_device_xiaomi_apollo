@@ -1,5 +1,5 @@
 # android_device_xiaomi_apollo
-For building TWRP for Xiaomi Mi 10T / 10T Pro / Redmi K30S
+For building OrangeFox for Xiaomi Mi 10T / 10T Pro / Redmi K30S Ultra
 
 *STATUS: TESTING*
 
@@ -32,11 +32,11 @@ Xiaomi Mi 10T serie was announced and released in October 2020.
 - Data decryption
 - Vibration
 - ADB
-
-**Not Working**
-
 - Adb side load
 
+**Not Works**
+- Installation problem on K30S Ultra, build is now only suitable for Global versions of apollo only
+- Apex mount issues - ignore it
 
 ## Compile
 
