@@ -1,13 +1,9 @@
 # android_device_xiaomi_apollo
-For building OrangeFox for Xiaomi Mi 10T / 10T Pro / Redmi K30S Ultra
+Device tree for Xiaomi Mi 10T / 10T Pro / Redmi K30S Ultra (codenamed: "apollo")
 
-*STATUS: TESTING*
+*STATUS: BETA*
 
- - 对于 红米K30S Ultra 有问题的话联系我。 QQ群：https://jq.qq.com/?_wv=1027&k=L7zFfYra
-
-The Xiaomi Mi 10T serie (codenamed _"apollo"_) are high-end smartphones from Xiaomi.
-
-Xiaomi Mi 10T serie was announced and released in October 2020.
+The Xiaomi Mi 10T serie are high-end smartphones from Xiaomi and was announced and released in October 2020.
 
 
 ## Device specifications
@@ -35,7 +31,7 @@ Xiaomi Mi 10T serie was announced and released in October 2020.
 - Adb side load
 
 **Not Works**
-- Installation problem on K30S Ultra, build is now only suitable for Global versions of apollo only
+- Installation problem on K30S Ultra, build is now ONLY suitable for Global versions of apollo
 - Apex mount issues - ignore it
 
 ## Compile
@@ -50,7 +46,7 @@ repo sync
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/apollo" name="Whyle/android_device_xiaomi_apollo" remote="github" revision="android-10.0" />
+<project path="device/xiaomi/apollo" name="ChrisMiller94/android_device_xiaomi_apollo" remote="github" revision="android-10.0" />
 ```
 
 Finally execute these:
@@ -68,5 +64,26 @@ To test it:
 fastboot boot out/target/product/apollo/recovery.img
 ```
 
+## Copyright notice
+
+/*
+ *  Copyright (C) 2020-2021 The OrangeFox Recovery Project
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+
 ## Thanks
 - [mauronofrio](https://github.com/mauronofrio)
+- [Whyle] (https://github.com/Whyle)
