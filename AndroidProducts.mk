@@ -19,5 +19,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
 		omni_apollo-eng \
-		omni_appllo-user \
+		omni_apollo-user \
 		omni_apollo-userdebug
