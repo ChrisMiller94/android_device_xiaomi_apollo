@@ -9,7 +9,7 @@ vendor		/vendor		ext4		display="Vendor";logical
 product		/product	ext4		display="Product";logical
 odm		/odm		ext4		display="Odm";logical
 
-/system_image     emmc     /dev/block/mapper/system                         flags=display="System Image";backup=0;flashing=1
+/system_image     emmc     /dev/block/mapper/system                         flags=display="System Image";backup=0;flashimg=1
 /cache		  ext4	   /dev/block/bootdevice/by-name/cache	
 /logfs            vfat     /dev/block/bootdevice/by-name/logfs              flags=display="logfs"
 /boot		  emmc	   /dev/block/bootdevice/by-name/boot
@@ -26,7 +26,7 @@ odm		/odm		ext4		display="Odm";logical
 /dsp		  emmc	   /dev/block/bootdevice/by-name/dsp		    flags=backup=1;subpartitionof=/modem
 /dsp_image        emmc     /dev/block/bootdevice/by-name/dsp                flags=display="dsp";flashimg=1
 /efs1		  emmc	   /dev/block/bootdevice/by-name/modemst1	    flags=backup=1;display="EFS"
-/efs2		  emmc	 . /dev/block/bootdevice/by-name/modemst2           flags=backup=1;subpartitionof=/efs1
+/efs2		  emmc	   /dev/block/bootdevice/by-name/modemst2           flags=backup=1;subpartitionof=/efs1
 /efsc		  emmc	   /dev/block/bootdevice/by-name/fsc		    flags=backup=1;subpartitionof=/efs1
 /efsg		  emmc	   /dev/block/bootdevice/by-name/fsg		    flags=backup=1;subpartitionof=/efs1
 /vbmeta		  emmc	   /dev/block/bootdevice/by-name/vbmeta		    flags=display="Vbmeta";backup=1;flashimg=1
