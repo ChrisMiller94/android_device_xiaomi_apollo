@@ -33,7 +33,7 @@ PRODUCT_PACKAGES_ENG += \
 # Stock flashable zips
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.allow.mock.location=1
-    
+
 # Apex libraries
 PRODUCT_HOST_PACKAGES += \
     libandroidicu
