@@ -1,5 +1,5 @@
 # android_device_xiaomi_apollo
-Device tree for Xiaomi Mi 10T / 10T Pro / Redmi K30S Ultra (codenamed: "apollo")
+OrangeFox Device tree for Xiaomi Mi 10T / 10T Pro / Redmi K30S Ultra (codenamed: "apollo")
 
 *STATUS: BETA*
 
@@ -28,35 +28,14 @@ The Xiaomi Mi 10T serie are high-end smartphones from Xiaomi and was announced a
 - Data decryption
 - Vibration
 - ADB
-- Adb side load
+- ADB Sideload
 
 **Not Works**
 - Installation problem on K30S Ultra, build is now ONLY suitable for Global versions of apollo
-- Apex mount issues - ignore it
 
 ## Compile
-
-First checkout minimal twrp with omnirom tree:
-
-```
-repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
-repo sync
-```
-
-Then add these projects to .repo/manifest.xml:
-
-```xml
-<project path="device/xiaomi/apollo" name="ChrisMiller94/android_device_xiaomi_apollo" remote="github" revision="android-10.0" />
-```
-
-Finally execute these:
-
-```
-. build/envsetup.sh
-lunch omni_apollo-eng
-export ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
-mka recoveryimage 
-```
+ You can find a compiling guide here:
+ https://wiki.orangefox.tech/en/dev/building
 
 To test it:
 
@@ -86,4 +65,4 @@ fastboot boot out/target/product/apollo/recovery.img
 
 ## Thanks
 - [mauronofrio](https://github.com/mauronofrio)
-- [Whyle] (https://github.com/Whyle)
+- [Whyle](https://github.com/Whyle)
