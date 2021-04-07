@@ -33,6 +33,13 @@ PRODUCT_PACKAGES_ENG += \
 # Stock flashable zips
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.allow.mock.location=1
+<<<<<<< HEAD
+=======
+
+# Apex libraries
+PRODUCT_HOST_PACKAGES += \
+    libandroidicu
+>>>>>>> ba730f72dadab9f572e1dc4b3b9d3a4722ce624e
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \

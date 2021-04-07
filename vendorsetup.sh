@@ -86,6 +86,10 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
   	   export | grep "OF_" >> $FOX_BUILD_LOG_FILE
    	   export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
   	   export | grep "TW_" >> $FOX_BUILD_LOG_FILE
+<<<<<<< HEAD
      fi
+=======
+ 	fi
+>>>>>>> ba730f72dadab9f572e1dc4b3b9d3a4722ce624e
 fi
 
