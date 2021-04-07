@@ -38,7 +38,10 @@
 system                                                  /system                ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount
 system_ext                                              /system_ext            ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount
 <<<<<<< HEAD
+<<<<<<< HEAD
 /dev/block/mapper/system                                /system_image          emmc    ro,barrier=1,discard                                 wait,logical,first_stage_mount
+=======
+>>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 =======
 >>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 product                                                 /product               ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount
