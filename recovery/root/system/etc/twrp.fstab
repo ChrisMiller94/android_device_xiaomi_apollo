@@ -47,6 +47,10 @@
 # mount 		point  		fstype  	device                             device2                flags
 system		/system		ext4		logical
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+system_ext	/system_ext	ext4		logical
+>>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 =======
 system_ext	/system_ext	ext4		logical
 >>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
@@ -54,6 +58,7 @@ vendor		/vendor		ext4		display="Vendor";logical
 product		/product		ext4		display="Product";logical
 odm			/odm			ext4		display="Odm";logical
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # mount_point	 fstype			path					flags
 /system_image     emmc     /dev/block/mapper/system                         flags=display="System Image";backup=0;flashimg=1
@@ -87,6 +92,8 @@ odm			/odm			ext4		display="Odm";logical
 /logo             emmc     /dev/block/bootdevice/by-name/logo               flags=display="logo";backup=1;flashimg=1
 /tz               emmc     /dev/block/bootdevice/by-name/tz                 flags=display="tz";backup=1;flashimg=1
 =======
+=======
+>>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 /cache				ext4		/dev/block/bootdevice/by-name/cache	
 /logfs            vfat     /dev/block/bootdevice/by-name/logfs        flags=display="logfs"
 /boot					emmc		/dev/block/bootdevice/by-name/boot
@@ -116,6 +123,9 @@ odm			/odm			ext4		display="Odm";logical
 /splash           emmc     /dev/block/bootdevice/by-name/splash       flags=display="splash";backup=1;flashimg=1
 /logo             emmc     /dev/block/bootdevice/by-name/logo         flags=display="logo";backup=1;flashimg=1
 /tz               emmc     /dev/block/bootdevice/by-name/tz           flags=display="tz";backup=1;flashimg=1
+<<<<<<< HEAD
+>>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
+=======
 >>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 /keystore         emmc     /dev/block/bootdevice/by-name/keystore
 /ssd              emmc     /dev/block/bootdevice/by-name/ssd
@@ -125,6 +135,9 @@ odm			/odm			ext4		display="Odm";logical
 /fsc              emmc     /dev/block/bootdevice/by-name/fsc
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 =======
 >>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 /abl              emmc     /dev/block/bootdevice/by-name/abl          flags=display="abl";backup=1;flashimg=1
@@ -135,6 +148,7 @@ odm			/odm			ext4		display="Odm";logical
 /keymaster        emmc     /dev/block/bootdevice/by-name/keymaster    flags=display="keymaster";backup=1;flashimg=1
 #/hyp              emmc     /dev/block/bootdevice/by-name/hyp          flags=display="hyp";backup=1;flashimg=1
 #/devcfg           emmc     /dev/block/bootdevice/by-name/devcfg       flags=display="devcfg";backup=1;flashimg=1
+<<<<<<< HEAD
 <<<<<<< HEAD
 /persist	   ext4     /dev/block/bootdevice/by-name/persist
 =======
@@ -147,6 +161,8 @@ odm			/odm			ext4		display="Odm";logical
 #/hyp             emmc     /dev/block/bootdevice/by-name/hyp                flags=display="hyp";backup=1;flashimg=1
 #/devcfg          emmc     /dev/block/bootdevice/by-name/devcfg             flags=display="devcfg";backup=1;flashimg=1
 >>>>>>> ba730f72dadab9f572e1dc4b3b9d3a4722ce624e
+=======
+>>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 =======
 >>>>>>> parent of fec0815... Fstabs : Add the option to flash img to system
 # Removable storage
