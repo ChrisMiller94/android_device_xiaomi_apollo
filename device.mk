@@ -20,10 +20,10 @@ PRODUCT_RELEASE_NAME := apollo
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 DEVICE_PATH := device/xiaomi/apollo
 
-# Fastbootd
-PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery
+# fastbootd stuff PRODUCT_PACKAGES += \
+fastbootd \ 
+android.hardware.fastboot@1.0-impl-mock \ 
+android.hardware.fastboot@1.0-impl-mock.recovery
 
 # QCOM decryption
 PRODUCT_PACKAGES_ENG += \
@@ -33,13 +33,14 @@ PRODUCT_PACKAGES_ENG += \
 # Stock flashable zips
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.allow.mock.location=1
-<<<<<<< HEAD
-=======
 
 # Apex libraries
 PRODUCT_HOST_PACKAGES += \
     libandroidicu
->>>>>>> ba730f72dadab9f572e1dc4b3b9d3a4722ce624e
+
+# OEM otacert
+PRODUCT_EXTRA_RECOVERY_KEYS += \
+    vendor/recovery/security/miui
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
